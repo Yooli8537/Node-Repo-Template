@@ -26,6 +26,9 @@ const global = {
     routes: {
       example: exampleRoutePath,
     },
+    utils: {
+      logger: loggerPath,
+    },
   },
 };
 
