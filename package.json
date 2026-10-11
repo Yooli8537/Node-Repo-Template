@@ -1,11 +1,9 @@
 {
   "name": "budget-tracker",
   "version": "1.0.0",
-  "description": "A lightweight Budget Tracker for any Browser.",
-  "keywords": [
-    "budget"
-  ],
-  "license": "SEE LICENSE IN license.md",
+  "description": "TEMPLATE DESCRIPTION",
+  "keywords": [],
+  "license": "SEE LICENSE IN LICENSE.md",
   "author": "Yooli8537",
   "type": "commonjs",
   "main": "server.js",
