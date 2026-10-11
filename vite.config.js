@@ -1,8 +1,14 @@
 export default {
+  root: "client",
+  publicDir: "static",
+  build: {
+    outDir: "/src",
+    emptyOutDir: true,
+  },
   server: {
     proxy: {
-      "/backend": "http://localhost:8561", // Make sure this port matches the one in server.js
+      "/api": "http://localhost:8501", // Make sure this port matches the one in server.js
     },
-    port: 8560,
+    port: 8500,
   },
 };
