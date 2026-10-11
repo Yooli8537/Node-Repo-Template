@@ -14,22 +14,22 @@ const exampleRoutePath = path.join(routesPath, "example.route.js");
 // Utils
 const loggerPath = path.join(utilsPath, logger.js);
 
-const global = {
-  paths: {
-    folders: {
-      server: serverPath,
-      routes: routesPath,
-      util: utilsPath,
-      logs: logsPath,
-      data: dataPath,
+const GLOBAL = {
+  PATHS: {
+    FOLDERS: {
+      SERVER: serverPath,
+      ROUTES: routesPath,
+      UTILS: utilsPath,
+      LOGS: logsPath,
+      DATA: dataPath,
     },
-    routes: {
-      example: exampleRoutePath,
+    ROUTES: {
+      EXAMPLE: exampleRoutePath,
     },
-    utils: {
-      logger: loggerPath,
+    UTILS: {
+      LOGGER: loggerPath,
     },
   },
 };
 
-module.exports = global;
+module.exports = GLOBAL;

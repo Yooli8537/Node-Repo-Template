@@ -2,7 +2,7 @@
 const pino = require("pino");
 const path = require("path");
 
-const global = require("./global");
+const GLOBAL = require("./global");
 
 // Gets date and time of server start.
 const currentdate = new Date();
@@ -30,7 +30,7 @@ if (seconds < 10) {
   seconds = `0${seconds}`;
 }
 
-const logPath = path.join(global.paths.folders.logs, `${year}-${month}-${day}-${hour}-${minutes}-${seconds}.log`);
+const logPath = path.join(GLOBAL.PATHS.FOLDERS.LOGS, `${year}-${month}-${day}-${hour}-${minutes}-${seconds}.log`);
 
 const logger = pino(
   pino.transport({
