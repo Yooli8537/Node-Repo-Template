@@ -14,6 +14,7 @@ const exampleRoutePath = path.join(routesPath, "example.route.js");
 // Utils
 const loggerPath = path.join(utilsPath, "logger.util.js");
 const validatePathPath = path.join(utilsPath, "validatePath.util.js");
+const handleErrorPath = path.join(utilsPath, "handleError.util.js");
 // Files
 const masterFilePath = path.join(dataPath, "master.json");
 
@@ -35,6 +36,7 @@ const GLOBAL = {
     UTILS: {
       LOGGER: loggerPath,
       VALIDATEPATH: validatePathPath,
+      HANDLEERROR: handleErrorPath,
     },
   },
 };
