@@ -1,0 +1,3 @@
+- Adjust Ports
+- Adjust README title
+- Adjust name & description in package.json & package-lock.json
