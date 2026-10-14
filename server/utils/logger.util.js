@@ -59,36 +59,36 @@ const logger = pino(
   }),
 );
 
-function info(message, requestValues) {
+function info(operation, message, requestValues) {
   if (!requestValues) {
-    logger.info(message);
+    logger.info(`${operation}: ${message}`);
   } else {
-    logger.info(requestValues, message);
+    logger.info(requestValues, `${operation}: ${message}`);
   }
 }
 
 // For settings
-function process(message, requestValues) {
+function process(operation, message, requestValues) {
   if (!requestValues) {
-    logger.info(message);
+    logger.info(`${operation}: ${message}`);
   } else {
-    logger.info(requestValues, message);
+    logger.info(requestValues, `${operation}: ${message}`);
   }
 }
 
-function success(message, requestValues) {
+function success(operation, message, requestValues) {
   if (!requestValues) {
-    logger.info(message);
+    logger.info(`${operation}: ${message}`);
   } else {
-    logger.info(requestValues, message);
+    logger.info(requestValues, `${operation}: ${message}`);
   }
 }
 
-function warn(message, requestValues) {
+function warn(operation, message, requestValues) {
   if (!requestValues) {
-    logger.warn(message);
+    logger.warn(`${operation}: ${message}`);
   } else {
-    logger.warn(requestValues, message);
+    logger.warn(requestValues, `${operation}: ${message}`);
   }
 }
 

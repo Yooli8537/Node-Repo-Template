@@ -7,12 +7,12 @@ export const logTypes = {
 };
 
 // level = 0 -> log / 1 -> warning / 2 -> error
-export function log(level, type, message) {
+export function log(level, type, operation, message) {
   if (level === 2) {
-    console.error(message);
+    console.error(`${operation}: ${message}`);
   } else if (level === 1) {
-    console.warn(message);
+    console.warn(`${operation}: ${message}`);
   } else {
-    console.log(message);
+    console.log(`${operation}: ${message}`);
   }
 }

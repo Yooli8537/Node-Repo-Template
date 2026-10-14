@@ -14,9 +14,14 @@ const exampleRoutePath = path.join(routesPath, "example.route.js");
 // Utils
 const loggerPath = path.join(utilsPath, "logger.util.js");
 const validatePathPath = path.join(utilsPath, "validatePath.util.js");
+// Files
+const masterFilePath = path.join(dataPath, "master.json");
 
 const GLOBAL = {
   PATHS: {
+    FILES: {
+      MASTER: masterFilePath,
+    },
     FOLDERS: {
       SERVER: serverPath,
       ROUTES: routesPath,
