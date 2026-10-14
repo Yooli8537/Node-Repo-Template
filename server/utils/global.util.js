@@ -12,7 +12,8 @@ const dataPath = path.join(rootPath, "data");
 // Server Routes
 const exampleRoutePath = path.join(routesPath, "example.route.js");
 // Utils
-const loggerPath = path.join(utilsPath, logger.js);
+const loggerPath = path.join(utilsPath, "logger.util.js");
+const validatePathPath = path.join(utilsPath, "validatePath.util.js");
 
 const GLOBAL = {
   PATHS: {
@@ -28,6 +29,7 @@ const GLOBAL = {
     },
     UTILS: {
       LOGGER: loggerPath,
+      VALIDATEPATH: validatePathPath,
     },
   },
 };

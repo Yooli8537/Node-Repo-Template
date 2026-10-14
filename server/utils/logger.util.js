@@ -2,7 +2,7 @@
 const pino = require("pino");
 const path = require("path");
 
-const GLOBAL = require("./global");
+const GLOBAL = require("./global.util");
 
 // Gets date and time of server start.
 const currentdate = new Date();
@@ -59,4 +59,37 @@ const logger = pino(
   }),
 );
 
-module.exports = logger;
+function info(message, requestValues) {
+  if (!requestValues) {
+    logger.info(message);
+  } else {
+    logger.info(requestValues, message);
+  }
+}
+
+// For settings
+function process(message, requestValues) {
+  if (!requestValues) {
+    logger.info(message);
+  } else {
+    logger.info(requestValues, message);
+  }
+}
+
+function success(message, requestValues) {
+  if (!requestValues) {
+    logger.info(message);
+  } else {
+    logger.info(requestValues, message);
+  }
+}
+
+function warn(message, requestValues) {
+  if (!requestValues) {
+    logger.warn(message);
+  } else {
+    logger.warn(requestValues, message);
+  }
+}
+
+module.exports = { info, process, success, warn, logger };
