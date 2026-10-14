@@ -3,6 +3,7 @@ export const logTypes = {
   process: "Process",
   settings: "Settings",
   call: "Call",
+  info: "Info",
 };
 
 // level = 0 -> log / 1 -> warning / 2 -> error
